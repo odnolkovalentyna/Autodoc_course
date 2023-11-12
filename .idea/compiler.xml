@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Autodoc_course" target="17" />
+      <module name="Autodoc_course" target="15" />
       <module name="myMaven" target="17" />
     </bytecodeTargetLevel>
   </component>
