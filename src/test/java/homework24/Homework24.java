@@ -46,9 +46,7 @@ public class Homework24  extends WebDriverInit {
             String title = listOfTitle.get(i).getText().split(",")[0].trim();
             String priceText = listOfPrices.get(i).getText();
 
-            // Extracting only the whole part of the price (before the comma) and removing non-numeric characters
             String price = priceText.split(",")[0].replaceAll("[^0-9]", "");
-
             titleAndPriceMap.put(title, price);
         }
 
