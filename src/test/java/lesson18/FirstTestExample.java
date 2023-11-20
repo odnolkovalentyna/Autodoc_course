@@ -9,12 +9,12 @@ public class FirstTestExample {
 
     @BeforeMethod
     public void beforeMethod(){
-        System.out.println("This method will execute before each Test method");
+        System.out.println("This method will execute before each WindowHandles method");
     }
 
     @AfterMethod
     public void afterMethod(){
-        System.out.println("This method will execute after each Test method");
+        System.out.println("This method will execute after each WindowHandles method");
     }
 
     @BeforeClass
@@ -24,10 +24,10 @@ public class FirstTestExample {
 
     @BeforeTest
     public void beforeTest(){
-        System.out.println("This method will execute before each Test before class");
+        System.out.println("This method will execute before each WindowHandles before class");
     }
 
-    @org.testng.annotations.Test(description = "this our first Test", priority = 1)
+    @org.testng.annotations.Test(description = "this our first WindowHandles", priority = 1)
     public void testMethod(){
         System.out.println("Hello world");
     }
