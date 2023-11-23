@@ -27,7 +27,7 @@ public class Homework25 extends WebDriverInit {
 
 
     @Test
-    public void testIsSelected() throws InterruptedException {
+    public void testOfPp() throws InterruptedException {
         driver.get("https://rozetka.pl/");
 
         closePopUp(COOKIES);
