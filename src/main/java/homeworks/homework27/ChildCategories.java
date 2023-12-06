@@ -30,11 +30,11 @@ public class ChildCategories extends ChildCategoriesLocators{
     }
 
 
-    public ChildCategories checkNumberOfProductsAddedToCart(){
+    public ChildCategories checkNumberOfProductsAddedToCart(int expectedCount){
         WebElement countOfGoodsInTheBasket =  webDriverWait.until(ExpectedConditions
                 .visibilityOfElementLocated(ICON_BASKET));
         String count = countOfGoodsInTheBasket.getText();
-        Assert.assertEquals(count, "1","Error in displaying the number of items added to the basket");
+        Assert.assertEquals(count, Integer.toString(expectedCount),"Error in displaying the number of items added to the basket");
         return this;
     }
 

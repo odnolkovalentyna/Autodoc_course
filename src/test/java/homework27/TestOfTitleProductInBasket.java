@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 public class TestOfTitleProductInBasket extends WebDriverInit {
 
     final String URL = "https://rozetka.pl/";
+    int countOfProduct = 1;
 
     @Test
     public void firstTest() throws InterruptedException {
@@ -25,7 +26,7 @@ public class TestOfTitleProductInBasket extends WebDriverInit {
 
         String actualTitle = new ChildCategories(webDriverWait)
                 .addProductToCart()
-                .checkNumberOfProductsAddedToCart()
+                .checkNumberOfProductsAddedToCart(countOfProduct)
                 .openCartPopUp()
                 .getTitleOfProductInCart();
 
