@@ -29,7 +29,7 @@ public class TestSelectAutodoc extends WebDriverInit {
 
     private void getMarkByValue(WebDriver driverFromTest, String markValue) throws InterruptedException {
         WebElement makerList = driverFromTest.findElement(By.id("form_maker_id"));
-        String markOptionValue = String.format("//select[@id='form_maker_id']/optgroup[2]/option[@value='%s']",markValue);
+        String markOptionValue = String.format("//select[@id='form_maker_id']/optgroup[2]/option[@value='%TestSuccessRegWithoutPojo']",markValue);
         WebElement makerListOption = driverFromTest.findElement(By.xpath(markOptionValue));
         makerList.click();
         makerListOption.click();
