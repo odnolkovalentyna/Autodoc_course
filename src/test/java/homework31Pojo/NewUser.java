@@ -1,4 +1,4 @@
-package homework31;
+package homework31Pojo;
 
 public class NewUser {
     private String name;

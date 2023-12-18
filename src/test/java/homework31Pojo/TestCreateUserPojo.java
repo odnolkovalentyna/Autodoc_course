@@ -1,4 +1,4 @@
-package homework31;
+package homework31Pojo;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
